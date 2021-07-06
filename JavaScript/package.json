@@ -1,0 +1,26 @@
+{
+  "name": "sorting_algorithms",
+  "version": "1.0.0",
+  "description": "A place to practice and test sorting algorithms in JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.7"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SeanREdwards/SortingAlgorithms.git"
+  },
+  "author": "Sean Edwards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanREdwards/SortingAlgorithms/issues"
+  },
+  "homepage": "https://github.com/SeanREdwards/SortingAlgorithms#readme"
+}
