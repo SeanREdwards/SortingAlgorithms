@@ -8,7 +8,7 @@
  */
 
 /*
-*Implementation of InsertionSort based upon the version discussed in "Introduction to Algorithms" by Cormen, Lesiserson, Rivest, & Stein.
+*Implementation of InsertionSort based upon the version discussed in "Introduction to Algorithms" by Cormen, Leiserson, Rivest, & Stein.
 */
 export function insertionSortV1(arr){
     for(let j = 1; j < arr.length; j++){

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1626614205861" clover="3.2.0">
+  <project timestamp="1626614205861" name="All files">
+    <metrics statements="64" coveredstatements="64" conditionals="14" coveredconditionals="14" methods="10" coveredmethods="10" elements="88" coveredelements="88" complexity="0" loc="64" ncloc="64" packages="1" files="3" classes="3"/>
+    <file name="InsertionSort.js" path="C:\Users\Edwar\OneDrive\Desktop\W Related\SortingAlgorithms\JavaScript\src\InsertionSort.js">
+      <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <line num="14" count="6" type="stmt"/>
+      <line num="15" count="12" type="stmt"/>
+      <line num="18" count="12" type="stmt"/>
+      <line num="19" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="20" count="15" type="stmt"/>
+      <line num="21" count="15" type="stmt"/>
+      <line num="23" count="12" type="stmt"/>
+      <line num="31" count="6" type="stmt"/>
+      <line num="32" count="6" type="stmt"/>
+      <line num="34" count="12" type="stmt"/>
+      <line num="35" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="37" count="15" type="stmt"/>
+      <line num="38" count="15" type="stmt"/>
+      <line num="39" count="15" type="stmt"/>
+      <line num="40" count="15" type="stmt"/>
+      <line num="42" count="12" type="stmt"/>
+    </file>
+    <file name="MergeSort.js" path="C:\Users\Edwar\OneDrive\Desktop\W Related\SortingAlgorithms\JavaScript\src\MergeSort.js">
+      <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <line num="15" count="68" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="29" type="stmt"/>
+      <line num="19" count="29" type="stmt"/>
+      <line num="20" count="29" type="stmt"/>
+      <line num="23" count="29" type="stmt"/>
+      <line num="29" count="36" type="stmt"/>
+      <line num="30" count="36" type="stmt"/>
+      <line num="33" count="36" type="stmt"/>
+      <line num="34" count="36" type="stmt"/>
+      <line num="37" count="36" type="stmt"/>
+      <line num="38" count="64" type="stmt"/>
+      <line num="41" count="36" type="stmt"/>
+      <line num="42" count="53" type="stmt"/>
+      <line num="46" count="36" type="stmt"/>
+      <line num="47" count="36" type="stmt"/>
+      <line num="49" count="36" type="stmt"/>
+      <line num="50" count="36" type="stmt"/>
+      <line num="53" count="36" type="stmt"/>
+      <line num="54" count="117" type="cond" truecount="2" falsecount="0"/>
+      <line num="55" count="64" type="stmt"/>
+      <line num="56" count="64" type="stmt"/>
+      <line num="58" count="53" type="stmt"/>
+      <line num="59" count="53" type="stmt"/>
+    </file>
+    <file name="QuickSort.js" path="C:\Users\Edwar\OneDrive\Desktop\W Related\SortingAlgorithms\JavaScript\src\QuickSort.js">
+      <metrics statements="25" coveredstatements="25" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+      <line num="15" count="65" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="27" type="stmt"/>
+      <line num="21" count="27" type="stmt"/>
+      <line num="22" count="27" type="stmt"/>
+      <line num="31" count="55" type="stmt"/>
+      <line num="32" count="55" type="stmt"/>
+      <line num="35" count="55" type="stmt"/>
+      <line num="37" count="149" type="cond" truecount="2" falsecount="0"/>
+      <line num="39" count="74" type="stmt"/>
+      <line num="40" count="74" type="stmt"/>
+      <line num="44" count="55" type="stmt"/>
+      <line num="45" count="55" type="stmt"/>
+      <line num="50" count="159" type="stmt"/>
+      <line num="51" count="159" type="stmt"/>
+      <line num="52" count="159" type="stmt"/>
+      <line num="61" count="63" type="cond" truecount="2" falsecount="0"/>
+      <line num="62" count="26" type="stmt"/>
+      <line num="64" count="26" type="stmt"/>
+      <line num="65" count="26" type="stmt"/>
+      <line num="75" count="26" type="stmt"/>
+      <line num="76" count="26" type="stmt"/>
+      <line num="78" count="26" type="stmt"/>
+      <line num="83" count="26" type="stmt"/>
+      <line num="84" count="26" type="stmt"/>
+      <line num="85" count="26" type="stmt"/>
+    </file>
+  </project>
+</coverage>

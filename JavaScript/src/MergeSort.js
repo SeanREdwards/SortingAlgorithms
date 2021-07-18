@@ -8,7 +8,7 @@
  */
 
  /*
-*Implementation of Merge Sort based upon the version discussed in "Introduction to Algorithms 3rd Edition"  by Cormen, Lesiserson, Rivest, & Stein.
+*Implementation of Merge Sort based upon the version discussed in "Introduction to Algorithms 3rd Edition"  by Cormen, Leiserson, Rivest, & Stein.
 */
 export function mergeSort(arr, startIndex, lastIndex){
 

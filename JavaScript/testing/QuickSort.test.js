@@ -1,6 +1,6 @@
 import { expect } from '@jest/globals';
 import { TestWatcher } from 'jest';
-import { quickSort, partition, swap} from '../src/QuickSort';
+import { quickSort, partition, swap, randomPartitionQuickSort, randomPartition} from '../src/QuickSort';
 
 describe('Tests for swap function', () => {
 
@@ -80,7 +80,7 @@ describe('Tests of quickSort', () => {
       let arr = [];
       let expectedArr = [];
   
-      quickSort(arr, 0, arr.length);
+      quickSort(arr, 0, arr.length - 1);
       expect(arr.length).toBe(0);
       expect(arr).toStrictEqual(expectedArr);
     });
@@ -181,6 +181,119 @@ describe('Tests of quickSort', () => {
       let expectedArr = [1, 2, 3, 4, 5, 6, 7, 8];
         
       quickSort(arr, 0, arr.length - 1);
+      expect(arr.length).toBe(8);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+});
+
+describe('Tests of randomQuickSort', () => {
+
+    //Edge case
+    test('quick sort on empty array', () => {
+      let arr = [];
+      let expectedArr = [];
+  
+      randomPartitionQuickSort(arr, 0, arr.length - 1);
+      expect(arr.length).toBe(0);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+  
+    //Edge case
+    test('quick sort on array length 1', () => {
+      let arr = [0];
+      let expectedArr = [0];
+  
+      randomPartitionQuickSort(arr, 0, arr.length - 1);
+      expect(arr.length).toBe(1);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+  
+    //Edge case
+    test('quick sort on an ordered array length 2', () => {
+      let arr = [0, 1];
+      let expectedArr = [0, 1];
+  
+      randomPartitionQuickSort(arr, 0, arr.length - 1);
+      expect(arr.length).toBe(2);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+  
+    //Edge case
+    test('quick sort on an unordered array length 2', () => {
+      let arr = [5, 2];
+      let expectedArr = [2, 5];
+      
+      randomPartitionQuickSort(arr, 0, arr.length - 1);
+      expect(arr.length).toBe(2);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+  
+    //Standard test case
+    test('quick sort on an ordered array length 3', () => {
+      let arr = [1, 3, 5];
+      let expectedArr = [1, 3, 5];
+  
+      randomPartitionQuickSort(arr, 0, arr.length - 1); 
+      expect(arr.length).toBe(3);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+  
+    //Standard test case
+    test('quick sort on an unordered array length 3', () => {
+      let arr = [5, 3, 1];
+      let expectedArr = [1, 3, 5];
+    
+      randomPartitionQuickSort(arr, 0, arr.length - 1); 
+      expect(arr.length).toBe(3);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+  
+    //Standard test case
+    test('quick sort on an unordered array length 6', () => {
+      let arr = [5, 2, 4, 6, 1, 3];
+      let expectedArr = [1, 2, 3, 4, 5, 6];
+  
+      randomPartitionQuickSort(arr, 0, arr.length - 1);
+      expect(arr.length).toBe(6);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+  
+    //Standard test case
+    test('quick sort on a different unordered array length 6', () => {
+      let arr = [31, 41, 59, 26, 41, 58];
+      let expectedArr = [26, 31, 41, 41, 58, 59];
+  
+      randomPartitionQuickSort(arr, 0 , arr.length - 1);
+      expect(arr.length).toBe(6);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+  
+    //Standard test case
+    test('quick sort on an unordered array length 7', () => {
+      let arr = [38, 27, 43, 3, 9, 82, 10];
+      let expectedArr = [3, 9, 10, 27, 38, 43, 82];
+        
+      randomPartitionQuickSort(arr, 0, arr.length - 1); 
+      expect(arr.length).toBe(7);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+  
+    //Standard test case
+    test('quick sort on an unordered array length 8', () => {
+      let arr = [5, 2, 4, 7 , 1, 3, 2, 6];
+      let expectedArr = [1, 2, 2, 3, 4, 5, 6, 7];
+        
+      randomPartitionQuickSort(arr, 0, arr.length - 1);
+      expect(arr.length).toBe(8);
+      expect(arr).toStrictEqual(expectedArr);
+    });
+
+    //Standard test case
+    test('quick sort on an unordered array length 8', () => {
+      let arr = [2, 8, 7, 1, 3, 5, 6, 4];
+      let expectedArr = [1, 2, 3, 4, 5, 6, 7, 8];
+        
+      randomPartitionQuickSort(arr, 0, arr.length - 1);
       expect(arr.length).toBe(8);
       expect(arr).toStrictEqual(expectedArr);
     });
